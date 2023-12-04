@@ -1,0 +1,174 @@
+:root{
+    --primario: #891190;
+    --secundario: #00BBB6;
+    --primarioOscuro: #434655;
+    
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Play', sans-serif;
+    font-family: 'Tektur', cursive;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--primarioOscuro);
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.8rem;
+    color:white;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+video{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    text-align: center;
+    color:var(--primario);
+    border-color:white;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+
+/* fin globales  */
+
+/* inicio headers */
+.header{
+    display: block;
+    text-align: center;
+}
+.header__logo{
+    margin: 3rem 0;
+    width: 30%;
+    align-items: center;
+}
+/* inicio navegacion */
+.navegacion{
+    background-color: var(--primario);
+    display: flex;
+    align-items: center;
+
+    
+}
+.navegacion__enlace{
+    width: 50%;
+}
+/* inicio footer */
+.footer{
+    background-color: var(--primario);
+    padding: 0,8rem;
+    margin: 0,5rem;
+}
+.footer__texto{
+    text-align: center;
+    font-size: 2.2rem;
+}
+/* Grid */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* productos */
+.producto{
+    padding: 0.5rem;
+    background-color: #737687;
+    border-radius: 4px;
+}
+.producto__img{
+    width: 100%;
+    height: 80%;
+}
+.producto__nombre{
+    font-size: 4rem;
+}
+.producto__precio{
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.producto__nombre,
+.producto__precio{
+    text-align: center;
+    line-height: 1.2;
+    margin: 1rem 0;
+}
+
+/* Pagina del producto */
+@media (min-width: 768px){
+    .figura{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 2rem;
+    }
+}
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem;
+}
+.formulario__campo{
+    border: 1rem solid var(--primario);
+    color: white;
+    font-size: 2rem;
+    gap: 1rem;
+    background-color: transparent;
+}
+
+.formulario__submit{
+    border:none;
+    background-color: yellow;
+    border-radius: 3px;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: font-size .3s ease;
+    grid-column: 1 / 3;
+}
+.formulario__submit:hover{
+    font-size: 2.4rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.731);
+}
+/*  video */
+.video{
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;  
+}

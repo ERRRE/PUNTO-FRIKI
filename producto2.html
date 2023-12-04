@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Tektur:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img loading="lazy" class="header__logo" src="/IMAGENES/Punto_friki_logo_grande-1024x1024.png" alt="Punto Friki">
+        </a>
+
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="/dragonball.html">
+                <img loading="lazy" src="/IMAGENES/Dragon Ball/Dragon-Ball-Z-Logo-PNG.png" alt="Dragon Ball">
+            </a>
+            <a class="navegacion__enlace" href="onepice.html">
+                <img loading="lazy" src="/IMAGENES/One Piece/One-Piece-Logo-1999.png"
+                alt="One Piece">
+            </a>
+            <a class="navegacion__enlace" href="heroes.html">
+                <img loading="lazy" src="/IMAGENES/Heroes/HOS_Logo_m01_sm.png"
+                alt="Heroes of the Storm">
+            </a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1>
+            MAJIN BUU
+        </h1>
+        <div class="figura">
+            <img loading="lazy" src="IMAGENES/Dragon Ball/S19cebd13f50e4b3584cbc2d30cab284fu.jpeg" alt="Imagen de la figura" class="figura__img">
+            <div class="figura__contenido">
+                <p>
+                    <strong>Pequeño Boo</strong>
+                    A diferencia de sus formas anteriores, Pequeño Boo tiene una mente plagada de pensamientos irracionales y espontáneos. Sigue conservando su personalidad infantil, pero ahora divirtiéndose y riendo histéricamente cuando destruye cualquier cosa que encuentra a su paso, ya sea seres vivos o un planeta entero. También posee su lado salvaje, compartido con el infantil mostrándose a gusto en las batallas, tomándolas como un juego. Junto a este lado salvaje, expresa actitudes de este estilo, como se lo ve golpeándose su pecho repetidamente, incluso su falta de piedad hacia sus enemigos.
+                </p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected value>Enlige una opcion</option>
+                        <option>Envio Expres</option>
+                        <option>Envio Estandar</option>
+                        <option>Elegir como Regalo</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Elige una cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto"> Punto Friki - Todos los Derecho Reservados - 2023 - Renan Ferreira </p>
+    </footer>
+</body>
+</html>
